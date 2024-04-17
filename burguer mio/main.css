@@ -1,0 +1,57 @@
+*{
+    background-image: url(assets/banner_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-left: 1rem;
+}
+.cabeza{
+    display: flex;
+    
+}
+
+.menu{
+    display: flex;
+    justify-content: right;
+    width: 80%;
+    align-items: center;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    padding: 20px 30px;
+}
+
+.link:hover{
+    background-color: rgb(18, 3, 236);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    background-size: 10rem;
+}
+
+.banner{
+    flex-direction: column;
+    width: 40%;
+    font-size: x-large;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.boton{
+    color: white;
+    font-size: x-large;
+    border-radius: 50px;
+    background: blue;
+    border-inline: 0px;
+    padding: 30px 30px;
+}
+
+.boton:hover{
+    background-color: rgb(148, 21, 27);
+    cursor: pointer;
+}
