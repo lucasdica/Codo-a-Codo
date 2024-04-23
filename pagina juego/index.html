@@ -264,9 +264,33 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
   <script>
     AOS.init();
   </script>
+    <script>let name = document.getElementById("name")
+      let lname = document.getElementById("lname")
+      let pass = document.getElementById("pass")
+      let country = document.getElementById("country")
+      let mail = document.getElementById("email")
+      let terms = document.getElementById("terms")
+      document.getElementById("register-btn").addEventListener("click", () => {
+        document.querySelector(".register").classList.toggle("aparecer")
+      })
+  
+      document.querySelector(".close").addEventListener("click", () => {
+        document.querySelector(".register").classList.toggle("aparecer")
+      })
+      document.getElementById("reg-submit").addEventListener("click", () => {
+  
+  
+        if (name.value.length > 2 && name.value.length <= 20 && lname.value.length > 2 && lname.value.length <= 20 && pass.value.length > 2 && pass.value.length <= 20 && pass.value.length > 2 && pass.value.length <= 20 && country.value.length > 2 && country.value.length <= 20 && mail.value.length > 2 && mail.value.length <= 50 && mail.value.includes(`@`) && mail.value.includes(`.`) && terms.checked) {
+  
+          document.querySelector(".register").classList.toggle("aparecer")
+        }
+      })
+    </script>
 </body>
 
 </html>
