@@ -17,6 +17,28 @@
 <body class="mb-2 text-primary-emphasis" style="background-color: #241d3a" data-aos="fade-down" data-aos-easing="linear"
   data-aos-duration="5500">
   <img src="imagenes/banner.PNG" alt="" class="w-100 h-20" />
+  <div class="register">
+    <form action="">
+      <div class="close">X</div>
+      <h2>Registrarse</h2>
+      <label for="name">Nombre</label>
+      <input id="name" required type="text">
+      <label for="lname">Apellido</label>
+      <input id="lname" required type="text">
+      <label for="email">Mail</label>
+      <input id="email" required type="email">
+      <label for="pass">Contraseña</label>
+      <input id="pass" required type="password">
+      <label for="date">Fecha de nacimiento</label>
+      <input id="date" type="date">
+      <label for="country">Pais</label>
+      <input id="country" required type="text">
+      <div class="termss"><input id="terms" required type="checkbox"><label class="terms" id="termss" for="terms">Acepto
+          los terminos y condiciones</label></div>
+      <input id="reg-submit" type="submit">
+      <p>Necesitas ayuda?</p>
+    </form>
+  </div>
   <header class="sticky-top bg-dark-subtle">
     <nav class="d-flex justify-content-between py-2 px-2 bg-dark">
       <div>
@@ -36,7 +58,7 @@
       <div>
         <ul class="list-inline mb-0">
           <li class="list-inline-item">
-            <a href="" class="btn btn-primary">Registrarse</a>
+            <a href="#" id="register-btn" class="btn btn-primary">Registrarse</a>
           </li>
           <li class="list-inline-item">
             <a href="" class="btn btn-warning">Iniciar Sesión</a>
