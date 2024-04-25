@@ -14,30 +14,36 @@
 }
 
 .desarrolladores:hover {
-    background-color: #0f99ac;
-    border-radius: 0.5rem;
+    background-color: #313131;
 }
 
 .desarrolladores:hover .imagen_desarrolladores {
     opacity: 0;
-    transition: opacity 1.3s ease;
+    transition: opacity 1s ease;
 }
 
 .desarrolladores a {
     opacity: 0;
     text-decoration: none;
-    color: white;
 }
 
 .desarrolladores:hover a {
-    transition: opacity 1.3s ease;
+    transition: 1.3s ease;
     opacity: 1;
+    color: #ffce7a;
+}
+
+.devs {
+    background-color: #ffce7a;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; 
+    width: 100%;
 }
 
 @keyframes show {
     from {
         opacity: 0;
-        scale: 25%;
+        scale: 75%;
     }
 
     to {
@@ -59,6 +65,10 @@
     cursor: pointer;
 }
 
+.imagen_juego:hover img {
+    filter: brightness(75%);
+}
+
 .register {
     position: absolute;
     left: 37%;
@@ -68,7 +78,6 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
-    background-color: #736cbb;
 
     margin: 0;
     padding: 0;
@@ -80,7 +89,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: #736cbb;
+    background-color: #414141;
     border-radius: 2px;
     width: 400px;
 }
@@ -112,6 +121,11 @@
     box-shadow: inset 30px 30px #736cbb44;
 }
 
+#reg-submit {
+    background-color: #ffce7a;
+    margin-bottom: 1rem;
+}
+
 #terms {
     margin-right: 0;
 }
@@ -140,3 +154,7 @@
     padding: 0 10.5px;
     cursor: pointer;
 }
+
+.animate__animated.animate__flipInX {
+    --animate-duration: 2s;
+  }
